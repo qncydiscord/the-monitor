@@ -8,8 +8,17 @@ var version = '1.0.2';
 
 bot.on('ready', () =>{
     console.log('This bot is a GO!');
-});
-//commands
+})
+
+bot.on('guildMemberAdd', member =>{
+    
+    const channel member.guild.channels.fnd(channel => channel.name === "welcome");
+    if(!channel) return;
+    
+    channel.send(`Welcome to Quincy's Discord, ${member}`)
+    
+});    
+
 bot.on('message', message=>{
 
     let args = message.content.substring(PREFIX.length).split(" ");
