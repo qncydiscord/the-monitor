@@ -1,0 +1,14 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "gim's bot.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js "
+  },
+  "author": "qncy",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
