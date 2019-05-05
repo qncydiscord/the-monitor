@@ -12,7 +12,7 @@ bot.on('ready', () =>{
 
 bot.on('guildMemberAdd', member =>{
     
-    const channel member.guild.channels.fnd(channel => channel.name === "welcome");
+    const channel member.guild.channels.find(channel => channel.name === "welcome");
     if(!channel) return;
     
     channel.send(`Welcome to Quincy's Discord, ${member}`)
