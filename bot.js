@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 const PREFIX = '!';
 
-var version = '1.0.4';
+var information = '1.0.5';
 
 bot.on('ready', () =>{
     console.log('This bot is a GO!');
@@ -27,8 +27,8 @@ bot.on('message', message=>{
         case 'ping':
             message.channel.sendMessage('pong!');
         break;
-        case 'version':
-            message.channel.sendMessage('Version ' + version);
+        case 'information':
+            message.channel.sendMessage('Made by Quincy#4663, Version ' + information);
         break;
         case 'clear':
             if(!args[1]) return message.reply('Please define how many messages you want to delete.')
