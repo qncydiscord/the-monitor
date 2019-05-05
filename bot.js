@@ -25,6 +25,9 @@ bot.on('message', message=>{
             if(!args[1]) return message.reply('Please define how many messages you want to delete.')
             message.channel.bulkDelete(args[1])
         break;
+        case 'avatar':
+            message.reply(message.author.avatarURL);
+        break;
     }
 })
 
