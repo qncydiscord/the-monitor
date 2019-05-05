@@ -8,7 +8,7 @@ var information = '1.0.5';
 
 bot.on('ready', () =>{
     console.log('This bot is a GO!');
-    bot.user.setActivity('Nothing at all', { type: 'STREAMING'}).catch;(console.error);
+    bot.user.setActivity('nothing at all', {type: 'WATCHING'}).catch;(console.error);
 })
 
 bot.on('guildMemberAdd', member =>{
