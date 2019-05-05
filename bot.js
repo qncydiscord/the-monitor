@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 const PREFIX = '!';
 
-var version = '1.0.2';
+var version = '1.0.3';
 
 bot.on('ready', () =>{
     console.log('This bot is a GO!');
@@ -12,7 +12,7 @@ bot.on('ready', () =>{
 
 bot.on('guildMemberAdd', member =>{
     
-    const channel member.guild.channels.find(channel => channel.name === "welcome");
+    const channel = member.guild.channels.find(channel => channel.name === "welcome");
     if(!channel) return;
     
     channel.send(`Welcome to Quincy's Discord, ${member}`)
