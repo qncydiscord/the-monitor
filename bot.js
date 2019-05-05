@@ -4,12 +4,18 @@ const bot = new Discord.Client();
 
 const PREFIX = '!';
 
-var version = '1.0.1';
+var version = '1.0.2';
 
 bot.on('ready', () =>{
     console.log('This bot is a GO!');
-})
-
+});
+//Greeting message
+bot.on('guildMemberAdd', member => {
+    const channel = member.guild.channels.find(ch => ch.name === 'everyone-talks');
+    if (!channel) return;
+    channel.send ('Good day, ${member}';
+});
+//commands
 bot.on('message', message=>{
 
     let args = message.content.substring(PREFIX.length).split(" ");
