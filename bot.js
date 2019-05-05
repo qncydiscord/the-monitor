@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 const PREFIX = '!';
 
-var version = '1.0.3';
+var version = '1.0.4';
 
 bot.on('ready', () =>{
     console.log('This bot is a GO!');
