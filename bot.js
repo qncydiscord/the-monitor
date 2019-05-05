@@ -9,12 +9,6 @@ var version = '1.0.2';
 bot.on('ready', () =>{
     console.log('This bot is a GO!');
 });
-//Greeting message
-bot.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.find(ch => ch.name === 'bottest');
-    if (!channel) return;
-    channel.send ('Good day, ${member}';
-});
 //commands
 bot.on('message', message=>{
 
