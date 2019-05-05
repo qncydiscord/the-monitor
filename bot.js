@@ -11,7 +11,7 @@ bot.on('ready', () =>{
 });
 //Greeting message
 bot.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.find(ch => ch.name === 'everyone-talks');
+    const channel = member.guild.channels.find(ch => ch.name === 'bottest');
     if (!channel) return;
     channel.send ('Good day, ${member}';
 });
