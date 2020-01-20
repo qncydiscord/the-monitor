@@ -42,8 +42,8 @@ bot.on('message', message=>{
         case 'poll':
             const Embed = new RichEmbed()
                 .setColor(0xFF0000)
-                .setTitle("Initiate Poll")
-                .setDescription("!poll Choice 1 Choice 2 (Leave a space in the middle.) Yes or No poll only.")
+                .setTitle('Initiate Poll')
+                .setDescription('!poll Choice 1 Choice 2 (Leave a space in the middle.) Yes or No poll only.')
             if (!args[1]) {
                 message.channel.send(Embed);
                 break;
@@ -51,9 +51,9 @@ bot.on('message', message=>{
 
             let msgArgs = args.slice(1).join(" ");
 
-            message.channel.send("🗒️" + "**" + msgArgs + "**").then(messageReaction => {
-                messageReaction.react("👍");
-                messageReaction.react("👎");
+            message.channel.send('🗒️' + "**" + msgArgs + "**").then(messageReaction => {
+                messageReaction.react('👍');
+                messageReaction.react('👎');
                 message.delete(1000).catch(console.error);
             });
         break;
